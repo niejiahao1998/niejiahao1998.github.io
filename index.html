@@ -52,6 +52,10 @@
 
 <p></p><p></p><p></p><p></p><p></p>
 <style>
+.news-title {
+  margin-bottom: 14px;   /* 控制标题和列表之间的距离 */
+}
+
 .news-list {
   list-style: none;
   padding: 0;
@@ -61,11 +65,19 @@
 .news-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 6px;
+  margin-bottom: 6px;   /* 每一条之间的行间距 */
+}
+
+.news-dot {
+  width: 18px;
+  flex-shrink: 0;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 1.5px;
 }
 
 .news-date {
-  width: 80px;   /* 控制对齐宽度 */
+  width: 88px;
   font-weight: 600;
   flex-shrink: 0;
 }
@@ -78,66 +90,81 @@
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   <tr>
     <td width="100%" valign="middle">
-      <heading>News</heading>
+      
+      <div class="news-title">
+        <heading>News</heading>
+      </div>
 
       <ul class="news-list">
 
         <li class="news-item">
+          <span class="news-dot">•</span>
           <span class="news-date">[Feb. 2026]</span>
           <span class="news-content">1 paper is accepted by CVPR 2026.</span>
         </li>
 
         <li class="news-item">
+          <span class="news-dot">•</span>
           <span class="news-date">[Jan. 2026]</span>
           <span class="news-content">Join TeleAI as an AI algorithm intern.</span>
         </li>
 
         <li class="news-item">
+          <span class="news-dot">•</span>
           <span class="news-date">[Nov. 2025]</span>
           <span class="news-content">1 paper is accepted by AAAI 2026.</span>
         </li>
 
         <li class="news-item">
+          <span class="news-dot">•</span>
           <span class="news-date">[Nov. 2025]</span>
           <span class="news-content">1 paper is accepted by WACV 2026.</span>
         </li>
 
         <li class="news-item">
+          <span class="news-dot">•</span>
           <span class="news-date">[Sep. 2025]</span>
           <span class="news-content">1 paper is accepted by NeurIPS 2025 (Oral).</span>
         </li>
 
         <li class="news-item">
+          <span class="news-dot">•</span>
           <span class="news-date">[Feb. 2025]</span>
           <span class="news-content">1 paper is accepted by CVPR 2025.</span>
         </li>
 
         <li class="news-item">
+          <span class="news-dot">•</span>
           <span class="news-date">[Nov. 2024]</span>
           <span class="news-content">1 paper is accepted by AAAI 2025.</span>
         </li>
 
         <li class="news-item">
+          <span class="news-dot">•</span>
           <span class="news-date">[Sep. 2024]</span>
           <span class="news-content">1 paper is accepted by NeurIPS 2024.</span>
         </li>
 
         <li class="news-item">
+          <span class="news-dot">•</span>
           <span class="news-date">[Sep. 2024]</span>
           <span class="news-content">Win the NTU IGP Research Excellence Award.</span>
         </li>
 
         <li class="news-item">
+          <span class="news-dot">•</span>
           <span class="news-date">[Mar. 2024]</span>
           <span class="news-content">1 paper is accepted by ICME 2024 (Oral).</span>
         </li>
 
         <li class="news-item">
+          <span class="news-dot">•</span>
           <span class="news-date">[Feb. 2024]</span>
           <span class="news-content">1 paper is accepted by CVPR 2024.</span>
         </li>
 
         <li class="news-item">
+          <span class="news-dot">•</span>
           <span class="news-date">[Sep. 2023]</span>
           <span class="news-content">1 paper is accepted by NeurIPS 2023.</span>
         </li>
@@ -580,7 +607,7 @@
               <div style="line-height:25px">
               <p>
                 <li> <stronghuge><strong>Reviewer:</strong></stronghuge><br/>
-                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp TMM, CVPR, NeurIPS, AAAI, ICLR, ICME, ACCV<br/>
+                  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp TMM, CVPR, ICCV, NeurIPS, ICML, AAAI, ICLR, ICME, ACCV<br/>
                 <li> <stronghuge><strong>Teaching:</strong></stronghuge><br/>
                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp SC2079/CE3004/CZ3004 Multi-Disciplinary Design Project, NTU, 2023 Fall, 2024 Spring<br/>
                   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp SC1003/SC5001/CE1103/CZ1103 Introduction to Computational Thinking and Programming, NTU, 2024 Fall<br/>
